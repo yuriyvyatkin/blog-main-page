@@ -301,7 +301,6 @@ input:focus {
 .trends-wrapper {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 .trends-title {
@@ -959,7 +958,7 @@ input:focus {
   }
 }
 
-@media (min-width: 360px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
   /* Base styles */
 
   .wrapper {
@@ -1044,7 +1043,7 @@ input:focus {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 641px) and (max-width: 1199px) {
   /* Base styles */
 
   .wrapper {
@@ -1181,7 +1180,29 @@ input:focus {
   }
 }
 
-@media (min-width: 360px) and (max-width: 767px) {
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+  .trend:nth-child(even) {
+    margin-left: 0;
+  }
+
+  .trend:nth-child(n + 3) {
+    margin-top: 0;
+  }
+
+  .trend {
+    width: calc(25% - 3.75px);
+  }
+
+  .trend:not(:nth-child(4n + 1)) {
+    margin-left: 5px;
+  }
+
+  .trend:nth-child(n + 5) {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 640px) {
   /* Base styles */
 
   .wrapper {
@@ -1400,5 +1421,25 @@ input:focus {
     padding-top: 26px;
     padding-bottom: 26px;
     margin-bottom: 42px;
+  }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+
+  .trend:nth-child(n + 2) {
+    margin-top: 0;
+  }
+
+  .trend {
+    width: calc(50% - 1px);
+    ;
+  }
+
+  .trend:nth-child(even) {
+    margin-left: 2px;
+  }
+
+  .trend:nth-child(n + 3) {
+    margin-top: 2px;
   }
 }
