@@ -150,6 +150,7 @@ input:focus {
 
 .header {
   position: relative;
+  z-index: 0;
 
   padding-top: 28px;
   padding-bottom: 128px;
@@ -295,6 +296,9 @@ input:focus {
 /* Main block - Trend topics' list */
 
 .trends {
+  max-width: 1660px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 64px;
 }
 
@@ -309,6 +313,7 @@ input:focus {
 
 .trend {
   position: relative;
+  z-index: 0;
 
   display: flex;
   width: calc(25% - 3.75px);
@@ -384,6 +389,7 @@ input:focus {
 
 .post {
   display: flex;
+  align-items: flex-start;
 }
 
 .post:nth-of-type(n + 2) {
@@ -445,6 +451,11 @@ input:focus {
 
 .sidebar {
   width: 269px;
+}
+
+.sidebar h2,
+.sidebar h3 {
+  font-size: 14px;
 }
 
 .new-posts {
@@ -725,7 +736,6 @@ input:focus {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
 
   /* change 'display' to 'flex' to show the popup */
   display: none;
@@ -959,12 +969,6 @@ input:focus {
 }
 
 @media (max-width: 1199px) {
-  /* Base styles */
-
-  .wrapper {
-    padding-right: 0;
-    padding-left: 0;
-  }
 
   /* Header block */
   /* Header block - Nav panel */
@@ -1013,6 +1017,10 @@ input:focus {
   }
 
   /* Main block - Side column */
+
+  .sidebar {
+    margin-left: 15px;
+  }
 
   .all-topics-list {
     margin-top: 18px;
@@ -1166,7 +1174,7 @@ input:focus {
   .product-preview {
     top: -197px;
 
-    width: 290px;
+    width: 286px;
   }
 
   .product-footer {
@@ -1180,7 +1188,7 @@ input:focus {
   }
 }
 
-@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+@media (min-width: 960px) and (max-width: 1199px) and (orientation: landscape) {
   .trend:nth-child(even) {
     margin-left: 0;
   }
@@ -1199,6 +1207,12 @@ input:focus {
 
   .trend:nth-child(n + 5) {
     margin-top: 5px;
+  }
+
+  @media (max-width: 979px) {
+    .trend-name {
+      font-size: 16px;
+    }
   }
 }
 
@@ -1334,6 +1348,11 @@ input:focus {
     flex-direction: column;
     width: 330px;
     margin-top: 63px;
+  }
+
+  .sidebar h2,
+  .sidebar h3 {
+    font-size: 16px;
   }
 
   .new-posts {
