@@ -524,7 +524,7 @@ select {
 
   width: 47px;
 
-  background: url('../svg/search.svg') center 15px / 20px no-repeat #b59f5b;
+  background: url('../images/svg/search.svg') center 15px / 20px no-repeat #b59f5b;
   border-width: 0;
 }
 
@@ -718,23 +718,23 @@ select {
 }
 
 .social-link-twitter {
-  background-image: url('../svg/004-twitter.svg');
+  background-image: url('../images/svg/socials/twitter.svg');
 }
 
 .social-link-pinterest {
-  background-image: url('../svg/001-pinterest.svg');
+  background-image: url('../images/svg/socials/pinterest.svg');
 }
 
 .social-link-facebook {
-  background-image: url('../svg/002-facebook-logo.svg');
+  background-image: url('../images/svg/socials/facebook.svg');
 }
 
 .social-link-instagram {
-  background-image: url('../svg/005-instagram.svg');
+  background-image: url('../images/svg/socials/instagram.svg');
 }
 
 .social-link-tumblr {
-  background-image: url('../svg/003-tumblr.svg');
+  background-image: url('../images/svg/socials/tumblr.svg');
 }
 
 .feedback-button {
@@ -894,7 +894,7 @@ select {
   font-size: 13px;
 
   color: rgba(0, 0, 0, 0.54);
-  background: url(../svg/form-arrows.svg) center right 12px / 10px no-repeat #f9f9f9;
+  background: url(../images/svg/form-arrows.svg) center right 12px / 10px no-repeat #f9f9f9;
   border: none;
 
   -webkit-appearance: none;
@@ -910,7 +910,7 @@ select {
 }
 
 .radio:checked ~ .radio-group-text::before {
-  background-image: url(../svg/form-circle.svg);
+  background-image: url(../images/svg/form-circle.svg);
 }
 
 .radio-group-text::before {
@@ -921,7 +921,7 @@ select {
 
   vertical-align: middle;
 
-  background-image: url(../svg/form-empty-circle.svg);
+  background-image: url(../images/svg/form-empty-circle.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 17px;
