@@ -802,7 +802,7 @@ select {
 
   width: 95%;
   max-width: 390px;
-  padding: 52px 30px;
+  padding: 22px 30px;
   margin: auto;
 
   background-color: #ffffff;
@@ -1522,5 +1522,13 @@ select {
 
   .trend:nth-child(n + 3) {
     margin-top: 2px;
+  }
+}
+
+@media (max-height: 597px) {
+  .popup-container {
+    margin-top: -1.4em;
+
+    scale: 0.8;
   }
 }
