@@ -9,3 +9,7 @@ HTML, CSS
 - pixel perfect;
 - семантичность тегов и названий атрибутов;
 - валидность по W3C.
+
+![](./layouts/all_layouts.jpg)
+
+![](./layouts/layout_rotation.jpg)
