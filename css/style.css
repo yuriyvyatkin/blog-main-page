@@ -1282,6 +1282,7 @@ select {
 
   .wrapper {
     max-width: 330px;
+    align-items: center;
   }
 
   .title {
